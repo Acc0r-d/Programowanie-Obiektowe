@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Zadanie14a {
     public static void main(String[] args) {
-        int n = 10;
+        int n = 15;
         //System.out.println(toBinary(n));
         System.out.println(toHex(20));
         //System.out.println(toOctal(n));
@@ -28,9 +28,9 @@ public class Zadanie14a {
         String binary = toBinary(n);
 
 
-        while (binary.length() % 4 != 0) {
-            binary = "0" + binary;
-        }
+        while (binary.length() % 4 != 0) {  ///
+            binary = "0" + binary;          /// Upewniamy się czy napewno każdy z segmentów kodu będzie mieć po 4 znaki
+        }                                   ///
 
 
         List<String> podzial = new ArrayList<>();
