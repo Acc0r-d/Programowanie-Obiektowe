@@ -3,8 +3,8 @@ import java.math.BigInteger;
 
 public class Zadanie12 {
     public static void main(String[] args) {
-        JOptionPane input = new JOptionPane();
-        int n = Integer.parseInt(JOptionPane.showInputDialog(input));
+
+        int n = Integer.parseInt(JOptionPane.showInputDialog("Wprowadz liczbe"));
         BigInteger out = Silnia(n);
         JOptionPane.showMessageDialog(null, out);
         System.exit(1);
