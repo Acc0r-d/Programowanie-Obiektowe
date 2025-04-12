@@ -2,8 +2,7 @@ import javax.swing.*;
 
 public class Zadanie13 {
     public static void main(String[] args) {
-        JOptionPane input = new JOptionPane();
-        int n = Integer.parseInt( JOptionPane.showInputDialog(input));
+        int n = Integer.parseInt( JOptionPane.showInputDialog("Sumuj:"));
         int score = sum(n);
         JOptionPane.showMessageDialog(null, score);
         System.exit(1);
